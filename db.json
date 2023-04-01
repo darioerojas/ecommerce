@@ -47,6 +47,12 @@
       "nombre": "Mesa Olsen",
       "precio": "85000",
       "id": 1459
+    },
+    {
+      "imagen": "https://www.bazardeluces.com.ar/wp-content/uploads/2019/11/os6810_1912.png",
+      "nombre": "Lámpara colgante",
+      "precio": "6800",
+      "id": 1460
     }
   ]
 }
