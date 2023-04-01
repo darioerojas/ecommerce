@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Inter&family=Kanit:wght@300&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Shantell+Sans:wght@300&family=Sigmar+One&family=Source+Sans+Pro&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="shortcut icon" href="../assets/img/Spoon-Graphics-Doodle-Home.128.png" type="image/x-icon">
+    <title>Administrador</title>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <div class="cabecera__logo">
+                <img src="../assets/img/logo.png" alt="logo">
+            </div>
+            <div class="busqueda__formulario">
+                <form>
+                    <label for="search">Buscar prodcutos:</label>
+                    <input type="text" id="search" name="search">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="cabecera__button">
+                <a href="../screens/index.html"><button>Salir</button></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="results" class="contenedor__resultado"></div>
+        <section class="agregarProductos">
+            <div class="admin__formulario">
+                <form data-form>
+                    <h3 class="admin__formulario-titulo">Agregar nuevo producto</h3>
+                    
+                    <label for="imagen">imagen:</label>
+                    <input type="text" id="imagen" name="imagen" required placeholder="Ingresa direccion de archivo" data-imagen/>
+
+                    <label for="nombre">Nombre de producto:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Producto..." data-nombre/>
+
+                    <label for="precio">Precio:</label>
+                    <input type="number" id="precio" name="precio" required placeholder="$" data-precio/>
+
+                    <button type="submit">Agregar Producto</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="seccion__5">
+        <div class="footer__contenedor">
+            <div class="footer__img">
+                <img src="../assets/img/logo.png" alt="casa">
+            </div>
+            <div class="footer__texto">
+                <ul>
+                    <li>Quines somos</li>
+                    <li>Politica de privacidad</li>
+                    <li>Programa de fidelidad</li>
+                    <li>Nuestras tiendas</li>
+                    <li>Quiero ser franquiciado</li>
+                    <li>Anuncie aquí</li>
+                </ul>
+            </div>
+            <div class="footer__formulario">
+                <form id="contact-form">
+                    <h3 class="footter__formulario-titulo">Hable con nosotros</h3>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required placeholder="Ingresa tu Nombre">
+                    <label for="message">Mensaje:</label>
+                    <textarea maxlength="300" id="message" name="message" required placeholder="... y aquí tu mensaje...." rows="8" cols="20"></textarea>
+                    <button type="submit" id="submit-btn" disabled>Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__texto-desarrollador">
+            <p>Desarrollado por Dario Rojas</p>
+            <p>2023</p>
+        </div>
+    </footer>
+    <script type="module" src="../controllers/crear-productos-controller.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../buscador.js"></script>
+</body>
+</html>
